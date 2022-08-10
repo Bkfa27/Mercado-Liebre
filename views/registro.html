@@ -41,7 +41,7 @@
                 <li><a href="">Ayuda</a></li>
             </ul>
             <ul class="right-navbar">
-                <li><a href="register.html">Creá tu cuenta <i class="far fa-address-card"></i></a></li>
+                <li><a href="registro.html">Creá tu cuenta <i class="far fa-address-card"></i></a></li>
                 <li><a href="login.html">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
                 <li><a href="">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
             </ul>
@@ -145,6 +145,18 @@
             })
         </script> -->
 
+
+        <script>
+            const formulario = document.getElementById('formulario');
+            formulario.addEventListener('submit', (e) => {
+                if (formulario.nameLastName.value.length < 2) {
+                    alert('No se ingreso un nombre valido');
+                    e.preventDefault();
+                } else {
+                    alert('El formulario esta siendo enviado');
+                }
+            });
+        </script>
     </main>
     
     <footer>
