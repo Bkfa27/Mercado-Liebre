@@ -19,7 +19,7 @@
 <body>
 
     <header>
-        <div class="menu1">
+        <div class="contenedor"><div class="cabecera-logo">
             <a href="/">
             <img src="/img/logo-mercado-liebre.svg" alt="logo" class="logo">
             </a>
@@ -27,7 +27,8 @@
         <div class="buscar">
                 <input type="text" placeholder="Buscar productos, marcas" required>
                 <button type="submit" class="lupa"><i class="fas fa-search"></i></button>
-        </div>            
+        </div> 
+        </div>           
             <h3 class="header-cuotas"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjetas de
                 crédito.</h3>
         </div>
@@ -54,8 +55,8 @@
     
     <main>
         <form id="Registro-Usuario" class="formulario">
-            <div class="nombre-apellido">
-                <input type="text" id="nombreyapellido" name="nombreyapellido" placeholder="Nombre y apellido">
+            <div class="nombre">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido">
             </div>
             <br>
             
@@ -84,8 +85,11 @@
             <div class="perfil">
                 <label for="perfil-usuario">Perfil Usuario</label>
                 <br>
+            
+            <div class="radio">
                 <input type="radio" name="perfil-usuario" value="Comprador">Comprador
                 <input type="radio" name="perfil-usuario" value="Vendedor">Vendedor
+            </div>
             </div>
             <br>
             
@@ -102,6 +106,7 @@
                 <input type="checkbox" name="interes" id="interes"> Jugueteria
                 <br>
                 <input type="checkbox" name="interes" id="interes"> Vida Sana
+            </div>
             </div>
             <br>
             
@@ -122,13 +127,12 @@
             <br>
             
             <label for="boton-enviar"></label>
-            <a href="/">
-                <button type="submit" class="boton-formulario">Enviar</button>
-            </a>
-            <button type="reset" class="boton-formulario">Borrar Formulario</button>
-        </form>
+                <button type="submit" class="boton-formulario" href="/">Enviar</button>
+                <button type="reset" class="boton-formulario">Borrar Formulario</button>
+            </form>
+
         
-        <script>
+        <!-- <script>
             const formulario = document.getElementById('formulario');
 
             formulario.addEventListener('submit', function (e) {
@@ -139,28 +143,28 @@
                     alert('No se ingreso un nombre valido')
                 }
             })
-        </script>
+        </script> -->
 
     </main>
     
     <footer>
-        <div class="footer-textos">
-            <article class="footer-bis">
-                <i class="fas fa-credit-card" style="color: #1259c3"></i>
+        <div class="footextos">
+            <article class="footextos2">
+                <i class="fas fa-credit-card"></i>
                 <h4>Pagá con tarjeta o en efectivo</h4>
                 <p> Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
                     puntos de pago. ¡Y siempre es seguro!"</p>
             </article>
 
-            <article class="footer-bis">
-                <i class="fas fa-gift" style="color: #1259c3"></i>
+            <article class="footextos2">
+                <i class="fas fa-gift"></i>
                 <h4>Envío gratis desde $ 2.500</h4>
                 <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
                     productos. Es un beneficio de Mercado Puntos.</p>
             </article>
 
-            <article class="footer-bis">
-                <i class="fas fa-user-shield" style="color: #1259c3"></i>
+            <article class="footextos2">
+                <i class="fas fa-user-shield"></i>
                 <h4>Seguridad, de principio a fin</h4>
                 <p> ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
                     porque estás siempre protegid@.</p>

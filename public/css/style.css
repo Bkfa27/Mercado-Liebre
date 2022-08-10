@@ -274,7 +274,6 @@ footer i:hover {
        justify-content: space-around;
        flex-direction: row;
        align-items: center; */
-           
    }
    
    .caja-general {
@@ -282,6 +281,10 @@ footer i:hover {
       flex-wrap: wrap;
       justify-content: space-around;
    }
+
+   .producto:hover {
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
 
    /* Noteboob - PC */
    
@@ -321,25 +324,18 @@ footer i:hover {
       margin: 10px 20px;
    }
    
-/* 
-.icono-carro:hover{
-   transform: rotate(360deg);
-}
+   main article:hover #description{
+      display: block;
+   }
 
+   main article:hover i {
+      transform: rotate(360deg)
+   }
 
-.fa-truck:hover{
-   transform: rotate(360deg);
-} */
 
 /* Formato mail del Login y Register */
 
-.nombre-usuariosi{
-   text-align: center;
-}
-.contraseña-se{
-   text-align: center;
-}
-.boton-enviar{
+main form {
    text-align: center;
 }
 
@@ -348,7 +344,6 @@ footer i:hover {
    size: 14px;
    font-weight: bold;
    color: #666;
-   align-items: center;
 }
 
 main form input {
@@ -360,8 +355,15 @@ main form input {
    border-radius: 5px;
    padding: 2px;
 }
+
 .checkbox {
+   text-align: start;
    margin: 0px;
+}
+
+.radio {
+   margin: 0px;
+   text-align: start;
 }
 
 .boton-formulario {
@@ -372,10 +374,9 @@ main form input {
    padding: 5px 10px;
    border-radius: 10px;
    transition: 500ms;
-   text-align: center;
 }
 
 .boton-formulario:hover {
    background-color: #0022AA;
 }
-   }
+}
