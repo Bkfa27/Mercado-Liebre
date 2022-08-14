@@ -119,25 +119,29 @@ main img {
 }   
 
 .caja-general {
-   display: flex;  
+   display: block;
    flex-wrap: wrap;
-   width: 100px;
-   justify-content: space-between;
+   width: 90%;
+   margin-right: auto;
+   margin-left: auto;
+   left: 100px;
+   
+  
+   
 }
 .producto {
    margin-top: 10px;
    box-sizing: border-box;
    display: flex;
    cursor: pointer;
-   margin: 2%;
-   width: 85%;
-   
+   width: auto;
 }
 
 .product {
    width: 100%;
    padding: 0px;
-   max-height: 100%;
+   margin-left: 0px;
+   
 }
 
 .detalle-producto {
@@ -303,6 +307,7 @@ footer:hover {
    .caja-general {
       display: flex;  
        flex-wrap: wrap;
+       justify-content: space-between;
        width: 100%;
        margin-right: auto;
    }
