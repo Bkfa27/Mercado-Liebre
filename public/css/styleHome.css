@@ -19,7 +19,7 @@ h3 {
    font-size: 24px;
 }
 
-/* Formato Header */
+/* -------------------   Formato Header ----------------------------------- */
 header {
    background-color: #EAC926;
    padding: 20px;
@@ -100,8 +100,7 @@ header ul {
    text-align: center;
 }
 
-/* Formato Main */
-/* Formato Main del Home */
+ /* ---------------------------- Formato Main del Home ------------------------*/
 
 main {
    background-color: #ebebeb;
@@ -120,13 +119,10 @@ main img {
 }   
 
 .caja-general {
-  display: block;  
+   display: flex;  
    flex-wrap: wrap;
-   width: 90%;
-   margin-right: auto;
-   margin-left: auto;
-   
-   
+   width: 100px;
+   justify-content: space-between;
 }
 .producto {
    margin-top: 10px;
@@ -134,7 +130,7 @@ main img {
    display: flex;
    cursor: pointer;
    margin: 2%;
-   width: 45%;
+   width: 85%;
    
 }
 
@@ -208,8 +204,7 @@ main img {
    transition: 2s;
 }
 
-/* Formato Footer */
-
+ /* ------------------------------- Formato Footer ------------------------- */
 .footextos {
    line-height: 20px;
    text-align: center;
@@ -232,12 +227,14 @@ footer i {
    transition: 500ms;
 }
 
-footer i:hover {
+footer:hover {
    color: #0022AA
 }
 
-/* MEDIA QUERY */
-/* Tablet */
+/* -------------------------------- MEDIA QUERY -----------------------------------------*/
+ 
+ /* ---- TABLET --- */
+ 
 
 @media (min-width: 481px) {
    .logo {
@@ -255,6 +252,7 @@ footer i:hover {
   }
    .header-cuotas {
        width: 40%;
+       font-size: small;
        /* display: flex;
        flex-direction: row;
        font-size: small;*/
@@ -290,6 +288,7 @@ footer i:hover {
    }
    .producto {
        margin-top: 10px;
+       width: 45%;
        
        transition: 500ms;
        flex-wrap: wrap;
@@ -302,17 +301,16 @@ footer i:hover {
    }
    
    .caja-general {
-      flex-wrap: wrap;
-      display: flex 
-     /*  justify-content: space-around; */ 
-   } 
-      
-     */
-
-   .producto:hover {
+      display: flex;  
+       flex-wrap: wrap;
+       width: 100%;
+       margin-right: auto;
+   }
+      .producto:hover {
       box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
 
+ 
    /* Noteboob - PC */
    
    @media (min-width: 769px) {
@@ -360,50 +358,4 @@ footer i:hover {
    }
 
 
-/* Formato mail del Login y Register */
-
-main form {
-   text-align: center;
-}
-
-.formulario label {
-   display: block;
-   size: 14px;
-   font-weight: bold;
-   color: #666;
-}
-
-main form input {
-   box-sizing: border-box;
-   margin: 5px;
-   padding: auto;
-   width: 50%;
-   border: solid 2px #666;
-   border-radius: 5px;
-   padding: 2px;
-}
-
-.checkbox {
-   text-align: start;
-   margin: 0px;
-}
-
-.radio {
-   margin: 0px;
-   text-align: start;
-}
-
-.boton-formulario {
-   background-color: #1259c3;
-   border: none;
-   font-size: 15px;
-   color: #FFF;
-   padding: 5px 10px;
-   border-radius: 10px;
-   transition: 500ms;
-}
-
-.boton-formulario:hover {
-   background-color: #0022AA;
-}
 }
