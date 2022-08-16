@@ -119,15 +119,13 @@ main img {
 }   
 
 .caja-general {
-   display: block;
+   display: flex;
    flex-wrap: wrap;
    width: 90%;
    margin-right: auto;
    margin-left: auto;
    left: 100px;
-   
-  
-   
+   flex-direction: row;
 }
 .producto {
    margin-top: 10px;
@@ -135,6 +133,8 @@ main img {
    display: flex;
    cursor: pointer;
    width: auto;
+   flex-direction: column;
+  /*  width: 90%; */
 }
 
 .product {
@@ -157,7 +157,7 @@ main img {
    padding: 5px;
    align-self: center;
    text-align: center;
-   width: 40%;
+   width: 50%;
    display: flex;
    flex-direction: row;
    justify-content: left;
@@ -174,20 +174,17 @@ main img {
    flex-direction: row;
    justify-content: center;
 }
-
 #descripcion {
    font-size: 16px;
    padding: 5px;
    color: #666;
   /*  display: none; */
 }
-
 .precio-descuentos {
    display: flex;
    justify-content: right;
    align-items: center;
 } 
-
 .icono-carrito {
    display: block;
    color: #39b54a;
@@ -203,7 +200,6 @@ main img {
    left: 80%;
    top: -30px;
 }
-
 .producto i {
    transition: 2s;
 }
